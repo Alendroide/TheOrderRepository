@@ -11,4 +11,4 @@ class ProductViewSet(ModelViewSet):
 class OrderViewSet(ModelViewSet):
     queryset = Order.objects.all()
     serializer_class = OrderSerializer
-    http_method_names = ['post','get']
+    http_method_names = ['post','get','put']
