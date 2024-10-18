@@ -7,4 +7,4 @@ class Employee(AbstractUser):
     age = models.IntegerField()
     hireDate = models.DateField()
     def __str__(self):
-        return self.id
+        return self.username
