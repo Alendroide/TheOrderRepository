@@ -3,7 +3,7 @@ from .models import Employee
 from django.contrib.auth.admin import UserAdmin as BaseUserAdmin
 # Register your models here.
 @admin.register(Employee)
-class UserAdmin (BaseUserAdmin):
+class Employer (BaseUserAdmin):
     fieldsets = (
     (None, {'fields': ('username', 'password')}),
     ('Personal info', {'fields': ('first_name', 'last_name', 'email')}),
